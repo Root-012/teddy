@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # set -x
-VERSION=2.1.5
+VERSION=1.1.1
 #Number of tools with keyboard shortcut support
 HOWMANYTOOLS=53
 BACKL="0"
@@ -279,9 +279,9 @@ function banner
 	echo -e ""
 	echo -e "$COL        ████████╗███████╗██████╗ ██████╗ ██╗   ██╗$CE v$VERSION"
 	echo -e "$COL        ╚══██╔══╝██╔════╝██╔══██╗██╔══██╗╚██╗ ██╔╝$CE"
-	echo -e "$COL           ██║   █████╗  ██║  ██║██║  ██║ ╚████╔╝ $CE   by "$COL"Santhosh$CE"
+	echo -e "$COL           ██║   █████╗  ██║  ██║██║  ██║ ╚████╔╝ $CE"
 	echo -e "$COL           ██║   ██╔══╝  ██║  ██║██║  ██║  ╚██╔╝  $CE"
-	echo -e "$COL    The    ██║   ███████╗██████╔╝██████╔╝   ██║  script$CE"
+	echo -e "$COL           ██║   ███████╗██████╔╝██████╔╝   ██║   $CE"
 	echo -e "$COL           ╚═╝   ╚══════╝╚═════╝ ╚═════╝    ╚═╝    $CE"
 	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
 	if [[ "$WLANCHECKING" = "" ]]
