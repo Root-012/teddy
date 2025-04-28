@@ -286,8 +286,8 @@ function banner
 	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
-		echo -e ""$RS" w1"$CE") Ena "$RS"$WLANN"$CE"${SPACESN}"$RS"w2"$CE") Disa "$RS"$WLANN"$CE"${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
-		echo -e ""$RS" m1"$CE") Ena "$RS"$WLANNM"$CE"${SPACESM}"$RS"m2"$CE") Disa "$RS"$WLANNM"$CE"${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") Stop monitor mode"
+		echo -e ""$RS" w1"$CE") Ena "$RS"$WLANN"$CE"${SPACESN}"$RS"w2"$CE") Disa         "$RS"$WLANN"$CE"${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
+		echo -e ""$RS" m1"$CE") Ena "$RS"$WLANNM"$CE"${SPACESM}"$RS"m2"$CE") Disa        "$RS"$WLANNM"$CE"${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") Stop monitor mode"
 	else
 		echo -e ""$YS" w1"$CE") Ena $WLANN${SPACESN}"$YS"w2"$CE") Disa $WLANN${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") moni mode"
 		echo -e ""$YS" m2"$CE") Ena $WLANNM${SPACESM}"$YS"m2"$CE") Disa $WLANNM${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") moni mode"
@@ -301,20 +301,20 @@ function banner
 	fi
 	if [[ -f /usr/bin/anonsurf ]]
 	then
-	echo -e ""$YS" 5"$CE") Ena surf          "$YS"d5"$CE") Disa surf              "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
-	echo -e ""$YS" 6"$CE") surf's status     "$YS"d6"$CE") Restart surf           "$RS"|"$CE""$YS"     d"$CE") Enjoy with the script"
+	echo -e ""$YS" 5"$CE") Ena surf          "$YS"d5"$CE") Disa surf          "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
+	echo -e ""$YS" 6"$CE") surf's status     "$YS"d6"$CE") Restart surf         "$RS"|"$CE""$YS"     d"$CE") Enjoy with the script"
 	else
-	echo -e ""$RS" 5"$CE") Ena surf          "$RS"d5"$CE") Disa surf              "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
-	echo -e ""$RS" 6"$CE") surf's status     "$RS"d6"$CE") Restart surf           "$RS"|"$CE"     "$YS"d"$CE") Enjoy with the script"
+	echo -e ""$RS" 5"$CE") Ena surf          "$RS"d5"$CE") Disa surf          "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
+	echo -e ""$RS" 6"$CE") surf's status     "$RS"d6"$CE") Restart surf         "$RS"|"$CE"     "$YS"d"$CE") Enjoy with the script"
 	fi
-	echo -e ""$YS" 7"$CE") View public IP                                         "$RS"|"$CE"     "$YS"s"$CE") settings"
+	echo -e ""$YS" 7"$CE") View public IP                                  "$RS"|"$CE"     "$YS"s"$CE") settings"
 	echo -e ""$YS" 8"$CE") View MAC"
 	echo -e ""$YS" 9"$CE") TOOLS             "$YS"15"$CE") Spoof EMAIL            "$YS"21"$CE") Show bandwidth"
 	if [[ -f /root/ngrok ]]
 	then
 		echo -e ""$YS"10"$CE") Packet Moni   "$YS"16"$CE") Ngrok port forward"
 	else
-		echo -e ""$YS"10"$CE") Packet Moni   "$RS"16"$CE") "$RS"Ngrok"$CE" port forward"
+		echo -e ""$YS"10"$CE") Packet Moni     "$RS"16"$CE") "$RS"Ngrok"$CE" port forward"
 	fi
 	echo -e ""$YS"12"$CE") WEP               "$YS"17"$CE") Auto-exploit browser"
 	echo -e ""$YS"13"$CE") MITM              "$YS"18"$CE") Geolocate an IP"
