@@ -92,7 +92,7 @@ then
 		echo -e "I SAID USE i ONLY ONE TIME..........."
 		sleep 3
 	fi
-	echo -e "Adding lscript to PATH so you can access it from anywhere"
+	echo -e "Adding teddy to PATH so you can access it from anywhere"
 	sleep 1
 	export PATH=/bin/lscript:$PATH
 	sleep 1
@@ -106,7 +106,7 @@ clear
 echo -e "DONE"
 sleep 1
 clear
-echo -e "Open a NEW terminal and type 'l' to launch the script"
+echo -e "Open a NEW terminal and type 'l' for the teddy script"
 sleep  4
 gnome-terminal -- l
 exit
