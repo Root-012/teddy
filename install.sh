@@ -20,7 +20,7 @@ then
 	chmod +x /root/lscript/install.sh
 	gnome-terminal -- "bash /root/lscript/install.sh"
 fi
-echo -e "Installing lscript..."
+echo -e "Installing Teddy's script..."
 sleep 1
 echo -e "Fixing permissions"
 sleep 2
