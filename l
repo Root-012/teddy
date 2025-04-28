@@ -277,12 +277,12 @@ function banner
 {
 	check_wlans
 	echo -e ""
-	echo -e "$COL        ████████╗███████╗██████╗ ██████╗ ██╗   ██╗$CE v$VERSION"
-	echo -e "$COL        ╚══██╔══╝██╔════╝██╔══██╗██╔══██╗╚██╗ ██╔╝$CE"
-	echo -e "$COL           ██║   █████╗  ██║  ██║██║  ██║ ╚████╔╝ $CE"
-	echo -e "$COL           ██║   ██╔══╝  ██║  ██║██║  ██║  ╚██╔╝  $CE"
-	echo -e "$COL           ██║   ███████╗██████╔╝██████╔╝   ██║   $CE"
-	echo -e "$COL           ╚═╝   ╚══════╝╚═════╝ ╚═════╝    ╚═╝    $CE"
+	echo -e "$GNS        ████████╗███████╗██████╗ ██████╗ ██╗   ██╗$CE v$VERSION"
+	echo -e "$GNS        ╚══██╔══╝██╔════╝██╔══██╗██╔══██╗╚██╗ ██╔╝$CE"
+	echo -e "$GNS           ██║   █████╗  ██║  ██║██║  ██║ ╚████╔╝ $CE"
+	echo -e "$GNS           ██║   ██╔══╝  ██║  ██║██║  ██║  ╚██╔╝  $CE"
+	echo -e "$GNS           ██║   ███████╗██████╔╝██████╔╝   ██║   $CE"
+	echo -e "$GNS           ╚═╝   ╚══════╝╚═════╝ ╚═════╝    ╚═╝    $CE"
 	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
@@ -531,7 +531,7 @@ then
 	mkdir "$KSPATH"/"$TITLE"
 fi
 clear
-echo -e "Enter the keyboard shortcut that will open "$TITLE" from lscript's main menu"
+echo -e "Enter the keyboard shortcut that will open "$TITLE" from teddy's main menu"
 echo -e "(e.g: "$YS""$TITLE""$CE")"
 echo -e "To delete it , type:   "$YS"delete"$CE""
 echo -e ""$YS" b"$CE") Go back"
