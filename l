@@ -55,7 +55,7 @@ function defaults_l
 #green start
 	GNS="\e[0;32m"
 #light green start
-	LGNS="\e[1;32m"
+	LGNS="\e[4;32m"
 #cyan start
 	CYS="\e[0;36m"
 #light cyan start
@@ -277,13 +277,13 @@ function banner
 {
 	check_wlans
 	echo -e ""
-	echo -e "$GNS        ████████╗███████╗██████╗ ██████╗ ██╗   ██╗$CE v$VERSION"
-	echo -e "$GNS        ╚══██╔══╝██╔════╝██╔══██╗██╔══██╗╚██╗ ██╔╝$CE"
-	echo -e "$GNS           ██║   █████╗  ██║  ██║██║  ██║ ╚████╔╝ $CE"
-	echo -e "$GNS           ██║   ██╔══╝  ██║  ██║██║  ██║  ╚██╔╝  $CE"
-	echo -e "$GNS           ██║   ███████╗██████╔╝██████╔╝   ██║   $CE"
-	echo -e "$GNS           ╚═╝   ╚══════╝╚═════╝ ╚═════╝    ╚═╝    $CE"
-	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
+	echo -e "$LGNS        ████████╗███████╗██████╗ ██████╗ ██╗   ██╗$CE v$VERSION"
+	echo -e "$LGNS        ╚══██╔══╝██╔════╝██╔══██╗██╔══██╗╚██╗ ██╔╝$CE"
+	echo -e "$LGNS           ██║   █████╗  ██║  ██║██║  ██║ ╚████╔╝ $CE"
+	echo -e "$LGNS           ██║   ██╔══╝  ██║  ██║██║  ██║  ╚██╔╝  $CE"
+	echo -e "$LGNS           ██║   ███████╗██████╔╝██████╔╝   ██║   $CE"
+	echo -e "$LGNS           ╚═╝   ╚══════╝╚═════╝ ╚═════╝    ╚═╝    $CE"
+	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
 		echo -e ""$RS" 1"$CE") Enable "$RS"$WLANN"$CE"${SPACESN}"$RS"d1"$CE") Disable "$RS"$WLANN"$CE"${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
@@ -305,7 +305,7 @@ function banner
 	echo -e ""$YS" 6"$CE") Anonsurf's status "$YS"d6"$CE") Restart anonsurf     "$RS"|"$CE""$YS"     d"$CE") Buy me a coffee"
 	else
 	echo -e ""$RS" 5"$CE") Enable anonsurf   "$RS"d5"$CE") Disable anonsurf     "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
-	echo -e ""$RS" 6"$CE") Anonsurf's status "$RS"d6"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"d"$CE") Buy me a coffee"
+	echo -e ""$RS" 6"$CE") Anonsurf's status "$RS"d6"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"d"$CE") Enjoy with the script"
 	fi
 	echo -e ""$YS" 7"$CE") View public IP                             "$RS"|"$CE"     "$YS"s"$CE") Go to settings menu"
 	echo -e ""$YS" 8"$CE") View MAC"
