@@ -286,8 +286,8 @@ function banner
 	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
-		echo -e ""$RS" w1"$CE") Ena "$RS"$WLANN"$CE"${SPACESN}"$RS"w2"$CE") Disa         "$RS"$WLANN"$CE"${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
-		echo -e ""$RS" m1"$CE") Ena "$RS"$WLANNM"$CE"${SPACESM}"$RS"m2"$CE") Disa        "$RS"$WLANNM"$CE"${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") Stop monitor mode"
+		echo -e ""$RS" w1"$CE") Ena "$RS"$WLANN"$CE"${SPACESN}"$RS"w2"$CE") Disa "$RS"$WLANN"$CE"${SPACESN}    "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
+		echo -e ""$RS" m1"$CE") Ena "$RS"$WLANNM"$CE"${SPACESM}"$RS"m2"$CE") Disa "$RS"$WLANNM"$CE"${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") Stop monitor mode"
 	else
 		echo -e ""$YS" w1"$CE") Ena $WLANN${SPACESN}"$YS"w2"$CE") Disa $WLANN${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") moni mode"
 		echo -e ""$YS" m2"$CE") Ena $WLANNM${SPACESM}"$YS"m2"$CE") Disa $WLANNM${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") moni mode"
