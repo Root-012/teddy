@@ -214,8 +214,8 @@ function is_it_an_ip()
 function latest_changelog
 {
 	clear
-	printf '\033]2;LATEST CHANGELOG\a'
-	echo -e ""$BS"Wellcome to version $VERSION"$CE""
+	printf '\033]2;Open Source log\a'
+	echo -e ""$BS"Welcome to version $VERSION"$CE""
 	echo -e "What is included in this update: "
 	cat "$LPATH"/Changelog | head -n $LATESTCHANGELOGLINES
 	echo -e "$PAKTC"
