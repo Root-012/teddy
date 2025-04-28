@@ -286,46 +286,40 @@ function banner
 	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
-		echo -e ""$RS" w1"$CE") Enable "$RS"$WLANN"$CE"${SPACESN}"$RS"w2"$CE") Disable "$RS"$WLANN"$CE"${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
-		echo -e ""$RS" m1"$CE") Enable "$RS"$WLANNM"$CE"${SPACESM}"$RS"m2"$CE") Disable "$RS"$WLANNM"$CE"${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") Stop monitor mode"
+		echo -e ""$RS" w1"$CE") Ena "$RS"$WLANN"$CE"${SPACESN}"$RS"w2"$CE") Disa "$RS"$WLANN"$CE"${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
+		echo -e ""$RS" m1"$CE") Ena "$RS"$WLANNM"$CE"${SPACESM}"$RS"m2"$CE") Disa "$RS"$WLANNM"$CE"${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") Stop monitor mode"
 	else
-		echo -e ""$YS" w1"$CE") Enable $WLANN${SPACESN}"$YS"w2"$CE") Disable $WLANN${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
-		echo -e ""$YS" m2"$CE") Enable $WLANNM${SPACESM}"$YS"m2"$CE") Disable $WLANNM${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") Stop monitor mode"
+		echo -e ""$YS" w1"$CE") Ena $WLANN${SPACESN}"$YS"w2"$CE") Disa $WLANN${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") moni mode"
+		echo -e ""$YS" m2"$CE") Ena $WLANNM${SPACESM}"$YS"m2"$CE") Disa $WLANNM${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") moni mode"
 	fi
 	echo -e ""$YS" 3"$CE") Change MAC        "$YS"c3"$CE") Restore original MAC "$RS"|"$CE""$YS"update"$CE") Check for updates"
 	if [[ -f /usr/bin/anonym8 ]]
 	then
-	echo -e ""$YS" a"$CE") Enable anonym8    "$YS"a1"$CE") Disable anonym8      "$RS"|"$CE""$YS"errors"$CE") Fix some errors"
+	echo -e ""$YS" a"$CE") Ena ym8    "$YS"a1"$CE") Disa ym8      "$RS"|"$CE""$YS"errors"$CE") Fixing"
 	else
-	echo -e ""$RS" a"$CE") Enable anonym8    "$RS"a1"$CE") Disable anonym8      "$RS"|"$CE""$YS"errors"$CE") Fix some errors"
+	echo -e ""$RS" a"$CE") Ena ym8    "$RS"a1"$CE") Disa ym8      "$RS"|"$CE""$YS"errors"$CE") Fixing"
 	fi
 	if [[ -f /usr/bin/anonsurf ]]
 	then
-	echo -e ""$YS" 5"$CE") Enable anonsurf   "$YS"d5"$CE") Disable anonsurf     "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
-	echo -e ""$YS" 6"$CE") Anonsurf's status "$YS"d6"$CE") Restart anonsurf     "$RS"|"$CE""$YS"     d"$CE") Buy me a coffee"
+	echo -e ""$YS" 5"$CE") Ena surf   "$YS"d5"$CE") Disa surf     "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
+	echo -e ""$YS" 6"$CE") surf's status "$YS"d6"$CE") Restart surf     "$RS"|"$CE""$YS"     d"$CE") Enjoy with the script"
 	else
-	echo -e ""$RS" 5"$CE") Enable anonsurf   "$RS"d5"$CE") Disable anonsurf     "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
-	echo -e ""$RS" 6"$CE") Anonsurf's status "$RS"d6"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"d"$CE") Enjoy with the script"
+	echo -e ""$RS" 5"$CE") Ena surf   "$RS"d5"$CE") Disa surf     "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
+	echo -e ""$RS" 6"$CE") surf's status "$RS"d6"$CE") Restart surf     "$RS"|"$CE"     "$YS"d"$CE") Enjoy with the script"
 	fi
-	echo -e ""$YS" 7"$CE") View public IP                             "$RS"|"$CE"     "$YS"s"$CE") Go to settings menu"
+	echo -e ""$YS" 7"$CE") View public IP                             "$RS"|"$CE"     "$YS"s"$CE") settings"
 	echo -e ""$YS" 8"$CE") View MAC"
-	echo -e ""$YS" 9"$CE") TOOLS             "$YS"15"$CE") Spoof EMAIL           "$YS"22"$CE") Show bandwidth"
+	echo -e ""$YS" 9"$CE") TOOLS             "$YS"15"$CE") Spoof EMAIL           "$YS"21"$CE") Show bandwidth"
 	if [[ -f /root/ngrok ]]
 	then
-		echo -e ""$YS"10"$CE") Handshake         "$YS"16"$CE") Ngrok port forward"
+		echo -e ""$YS"10"$CE") Packet Moni         "$YS"16"$CE") Ngrok port forward"
 	else
-		echo -e ""$YS"10"$CE") Handshake         "$RS"16"$CE") "$RS"Ngrok"$CE" port forward"
+		echo -e ""$YS"10"$CE") Packet Moni         "$RS"16"$CE") "$RS"Ngrok"$CE" port forward"
 	fi
-	if [[ -f /usr/local/bin/howdoi ]]
-	then
-		echo -e ""$YS"11"$CE") Find WPS pin      "$YS"17"$CE") Ask (Howdoi tool)"
-	else
-		echo -e ""$YS"11"$CE") Find WPS pin      "$RS"17"$CE") Ask ("$RS"Howdoi"$CE" tool)"
-	fi
-	echo -e ""$YS"12"$CE") WEP menu          "$YS"18"$CE") Auto-exploit browser"
-	echo -e ""$YS"13"$CE") MITM              "$YS"19"$CE") Geolocate an IP"
-	echo -e ""$YS"14"$CE") Metasploit        "$YS"20"$CE") Bruteforce login"   
-	echo -e ""$YS" 0"$CE") Exit              "$YS"21"$CE") Sqlmap automated"
+	echo -e ""$YS"12"$CE") WEP               "$YS"17"$CE") Auto-exploit browser"
+	echo -e ""$YS"13"$CE") MITM              "$YS"18"$CE") Geolocate an IP"
+	echo -e ""$YS"14"$CE") Metasploit        "$YS"19"$CE") Bruteforce Attack"   
+	echo -e ""$YS" 0"$CE") Exit              "$YS"20"$CE") Sqlmap"
 	echo "Choose: "
 	read -e YORNAA
 	#~ echo "$YORNNA"
