@@ -295,26 +295,26 @@ function banner
 	echo -e ""$YS" 3"$CE") Change MAC        "$YS"c3"$CE") Restore original MAC "$RS"|"$CE""$YS"update"$CE") Check for updates"
 	if [[ -f /usr/bin/anonym8 ]]
 	then
-	echo -e ""$YS" a"$CE") Ena ym8    "$YS"a1"$CE") Disa ym8      "$RS"|"$CE""$YS"errors"$CE") Fixing"
+	echo -e ""$YS" a"$CE") Ena ym8           "$YS"a1"$CE") Disa ym8             "$RS"|"$CE""$YS"errors"$CE") Fixing"
 	else
-	echo -e ""$RS" a"$CE") Ena ym8    "$RS"a1"$CE") Disa ym8      "$RS"|"$CE""$YS"errors"$CE") Fixing"
+	echo -e ""$RS" a"$CE") Ena ym8           "$RS"a1"$CE") Disa ym8             "$RS"|"$CE""$YS"errors"$CE") Fixing"
 	fi
 	if [[ -f /usr/bin/anonsurf ]]
 	then
-	echo -e ""$YS" 5"$CE") Ena surf   "$YS"d5"$CE") Disa surf     "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
-	echo -e ""$YS" 6"$CE") surf's status "$YS"d6"$CE") Restart surf     "$RS"|"$CE""$YS"     d"$CE") Enjoy with the script"
+	echo -e ""$YS" 5"$CE") Ena surf          "$YS"d5"$CE") Disa surf              "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
+	echo -e ""$YS" 6"$CE") surf's status     "$YS"d6"$CE") Restart surf           "$RS"|"$CE""$YS"     d"$CE") Enjoy with the script"
 	else
-	echo -e ""$RS" 5"$CE") Ena surf   "$RS"d5"$CE") Disa surf     "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
-	echo -e ""$RS" 6"$CE") surf's status "$RS"d6"$CE") Restart surf     "$RS"|"$CE"     "$YS"d"$CE") Enjoy with the script"
+	echo -e ""$RS" 5"$CE") Ena surf          "$RS"d5"$CE") Disa surf              "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
+	echo -e ""$RS" 6"$CE") surf's status     "$RS"d6"$CE") Restart surf           "$RS"|"$CE"     "$YS"d"$CE") Enjoy with the script"
 	fi
-	echo -e ""$YS" 7"$CE") View public IP                             "$RS"|"$CE"     "$YS"s"$CE") settings"
+	echo -e ""$YS" 7"$CE") View public IP                                         "$RS"|"$CE"     "$YS"s"$CE") settings"
 	echo -e ""$YS" 8"$CE") View MAC"
-	echo -e ""$YS" 9"$CE") TOOLS             "$YS"15"$CE") Spoof EMAIL           "$YS"21"$CE") Show bandwidth"
+	echo -e ""$YS" 9"$CE") TOOLS             "$YS"15"$CE") Spoof EMAIL            "$YS"21"$CE") Show bandwidth"
 	if [[ -f /root/ngrok ]]
 	then
-		echo -e ""$YS"10"$CE") Packet Moni         "$YS"16"$CE") Ngrok port forward"
+		echo -e ""$YS"10"$CE") Packet Moni   "$YS"16"$CE") Ngrok port forward"
 	else
-		echo -e ""$YS"10"$CE") Packet Moni         "$RS"16"$CE") "$RS"Ngrok"$CE" port forward"
+		echo -e ""$YS"10"$CE") Packet Moni   "$RS"16"$CE") "$RS"Ngrok"$CE" port forward"
 	fi
 	echo -e ""$YS"12"$CE") WEP               "$YS"17"$CE") Auto-exploit browser"
 	echo -e ""$YS"13"$CE") MITM              "$YS"18"$CE") Geolocate an IP"
