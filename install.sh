@@ -7,52 +7,52 @@ clear
 apt-get -y install gnome-terminal
 clear
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-if [[ "$DIR" != "/root/lscript" ]]
+if [[ "$DIR" != "/root/teddy" ]]
 then
 	echo -e "You didn't follow the github's simple install instructions.I will try to do it for you..."
 	sleep 4
-	if [[ -d /root/lscript ]]
+	if [[ -d /root/teddy ]]
 	then
-		rm -r /root/lscript
+		rm -r /root/teddy
 	fi
-	mkdir /root/lscript
-	cp -r "$DIR"/* /root/lscript
-	chmod +x /root/lscript/install.sh
-	gnome-terminal -- "bash /root/lscript/install.sh"
+	mkdir /root/teddy
+	cp -r "$DIR"/* /root/teddy
+	chmod +x /root/teddy/install.sh
+	gnome-terminal -- "bash /root/teddy/install.sh"
 fi
-echo -e "Installing lscript..."
+echo -e "Installing teddy..."
 sleep 1
 echo -e "Fixing permissions"
 sleep 2
-chmod +x /root/lscript/lh1
-chmod +x /root/lscript/lh2
-chmod +x /root/lscript/lh3
-chmod +x /root/lscript/lh31
-chmod +x /root/lscript/l
-chmod +x /root/lscript/lh4
-chmod +x /root/lscript/lh41
-chmod +x /root/lscript/lh21
-chmod +x /root/lscript/lh42
-chmod +x /root/lscript/lh43
-chmod +x /root/lscript/ls/l131.sh
-chmod +x /root/lscript/ls/l132.sh
-chmod +x /root/lscript/ls/l133.sh
-chmod +x /root/lscript/uninstall.sh
+chmod +x /root/teddy/lh1
+chmod +x /root/teddy/lh2
+chmod +x /root/teddy/lh3
+chmod +x /root/teddy/lh31
+chmod +x /root/teddy/l
+chmod +x /root/teddy/lh4
+chmod +x /root/teddy/lh41
+chmod +x /root/teddy/lh21
+chmod +x /root/teddy/lh42
+chmod +x /root/teddy/lh43
+chmod +x /root/teddy/ls/l131.sh
+chmod +x /root/teddy/ls/l132.sh
+chmod +x /root/teddy/ls/l133.sh
+chmod +x /root/teddy/uninstall.sh
 clear
-echo -e "Copying script to /bin/lscript"
+echo -e "Copying script to /bin/teddy"
 sleep 1
-mkdir /bin/lscript
-cd /root/lscript
-cp /root/lscript/l /bin/lscript
-cp /root/lscript/lh1 /bin/lscript
-cp /root/lscript/lh2 /bin/lscript
-cp /root/lscript/lh3 /bin/lscript
-cp /root/lscript/lh31 /bin/lscript
-cp /root/lscript/lh4 /bin/lscript
-cp /root/lscript/lh41 /bin/lscript
-cp /root/lscript/lh21 /bin/lscript
-cp /root/lscript/lh42 /bin/lscript
-cp /root/lscript/lh43 /bin/lscript
+mkdir /bin/teddy
+cd /root/teddy
+cp /root/teddy/l /bin/teddy
+cp /root/teddy/lh1 /bin/teddy
+cp /root/teddy/lh2 /bin/teddy
+cp /root/teddy/lh3 /bin/teddy
+cp /root/teddy/lh31 /bin/teddy
+cp /root/teddy/lh4 /bin/teddy
+cp /root/teddy/lh41 /bin/teddy
+cp /root/teddy/lh21 /bin/teddy
+cp /root/teddy/lh42 /bin/teddy
+cp /root/teddy/lh43 /bin/teddy
 clear
 #required for gui
 apt-get -y install ncurses-dev
@@ -86,17 +86,17 @@ then
 elif [[ "$UORI" = "i" ]]
 then
 	clear
-	BASHCHECK=$(cat ~/.bashrc | grep "bin/lscript")
+	BASHCHECK=$(cat ~/.bashrc | grep "bin/teddy")
 	if [[ "$BASHCHECK" != "" ]]
 	then
 		echo -e "I SAID USE i ONLY ONE TIME..........."
 		sleep 3
 	fi
-	echo -e "Adding lscript to PATH so you can access it from anywhere"
+	echo -e "Adding teddy to PATH so you can access it from anywhere"
 	sleep 1
-	export PATH=/bin/lscript:$PATH
+	export PATH=/bin/teddy:$PATH
 	sleep 1
-	echo "export PATH=/bin/lscript:$PATH" >> ~/.bashrc
+	echo "export PATH=/bin/teddy:$PATH" >> ~/.bashrc
 	sleep 1
 	clear
 	break
